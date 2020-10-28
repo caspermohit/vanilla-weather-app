@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>my weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+   
+<div class="location">
+    <h1 class="location-timezone">time?</h1>
+    <canvas class="icon" width="128" height="128"></canvas>
+</div>
+<div class="temperature">
+    <div class="degree-section">
+    <h2 class="temperature-degree">--</h2>
+    <span>
+        °F
+    </span>
+</div>
+   <br>
+</div>
+<br>
+<br>
+<h1>current weather table</h1>
+
+<div class="container">
+    
+    <table style="width:100%">
+    <tr>
+    <th>apparent temperature</th>
+    <th>summary</th>
+    <th>humidity</th>
+    <th>dew Point</th>
+    <th>ozone </th>
+    <th>cloud cover </th>
+    <th>pressure </th>
+    <th>uv-index </th>
+    <th>visibility </th>
+    <th>wind Speed </th>
+    <th>image </th>
+   
+    
+    </tr>
+    <tr>
+        <td class="apparent">---</td>
+        <td class="temperature-description">---</td>
+        <td class="humid">--</td>
+        <td class="dew">--</td>
+        <td class="ozone">--</td>
+        <td class="cloud">--</td>
+        <td class="pressure">--</td>
+        <td class="uv-index">--</td>
+        <td class="visibility">--</td>
+        <td class="windspeed">--</td>
+        <td ><canvas class="sicon" width="128" height="128"></canvas></td>
+      </tr>
+</table>
+</div>
+<br>
+<br>
+<h1>daily weather table</h1>
+<br>
+</div>
+  <div class="summary"><h2>------</h2></div>
+  <canvas class="dicon" width="128" height="128"></canvas>
+</div>
+</div>
+<div class="container">
+  <div class="today">
+  
+    <h2>today</h2>
+    <icon class="ico">iamge</icon>
+    <h3>time</h3>
+    <div class="time">
+        <p>sunrise</p>  <p>sunset</p>
+    </div>
+<h3>summary</h3> <h4>humidity</h4>
+<h4>pressure</h4>
+  </div>
+
+  <div class="tomarrow">
+  
+    <h2>tomarrow</h2>
+    <icon class="ico">image</icon>
+    <h3>time</h3>
+    <div class="time">
+        <p>sunrise</p>  <p>sunset</p>
+    </div>
+<h3>summary</h3> <h4>humidity</h4>
+<h4>pressure</h4>
+  </div>
+
+</div>
+    <script src="skycons.js"></script>
+    <script src="app.js"></script>
+   
+</body>
+</html>
